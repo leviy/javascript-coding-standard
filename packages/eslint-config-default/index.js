@@ -24,8 +24,9 @@ module.exports = {
         'prefer-destructuring': ['error', {
             'array': false
         }],
-        "no-param-reassign": [
+        'no-param-reassign': [
             "error", { "props": false }
-        ]
+        ],
+        'operator-linebreak': 'off'
     }
 };
