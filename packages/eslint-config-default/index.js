@@ -14,7 +14,7 @@ module.exports = {
         'arrow-body-style': 'off',
         'class-methods-use-this': 'off',
         'max-len': [2, 140, 4],
-        'indent': ['error', 4],
+        'indent': ['error', 4, {'SwitchCase': 1}],
         'no-continue': 'off',
         'no-prototype-builtins': 'off',
         'no-underscore-dangle': ['error', {
