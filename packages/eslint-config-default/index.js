@@ -20,9 +20,12 @@ module.exports = {
         'no-underscore-dangle': ['error', {
             'allowAfterThis': true
         }],
-        'object-shorthand': ['error', 'never'],
+        'object-shorthand': ['error', 'methods'],
         'prefer-destructuring': ['error', {
             'array': false
-        }]
+        }],
+        "no-param-reassign": [
+            "error", { "props": false }
+        ]
     }
 };
