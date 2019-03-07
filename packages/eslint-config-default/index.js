@@ -14,7 +14,9 @@ module.exports = {
         'arrow-body-style': 'off',
         'class-methods-use-this': 'off',
         'max-len': [2, 140, 4],
-        'indent': ['error', 4, {'SwitchCase': 1}],
+        'indent': ['error', 4, {
+            'SwitchCase': 1
+        }],
         'no-continue': 'off',
         'no-prototype-builtins': 'off',
         'no-underscore-dangle': ['error', {
@@ -24,9 +26,13 @@ module.exports = {
         'prefer-destructuring': ['error', {
             'array': false
         }],
-        'no-param-reassign': [
-            "error", { "props": false }
-        ],
-        'operator-linebreak': 'off'
+        'no-param-reassign': ['error', {
+            'props': false
+        }],
+        'operator-linebreak': 'off',
+        'no-multiple-empty-lines': ['error', {
+            'max': 2,
+            'maxEOF': 1
+        }]
     }
 };
