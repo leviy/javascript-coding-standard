@@ -9,10 +9,10 @@
     "dependencies": {
         "eslint-config-airbnb-base": "^13.2",
         "eslint-plugin-jest": "^22.10",
-        "eslint-plugin-jsdoc": "^15.5.3",
-        "eslint-plugin-import": "^2.18"
+        "eslint-plugin-jsdoc": "^15.5.3"
     },
     "peerDependencies": {
-        "eslint": "^6.0"
+        "eslint": "^6.0",
+        "eslint-plugin-import": "^2.18"
     }
 }
