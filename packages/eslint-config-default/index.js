@@ -5,7 +5,7 @@ module.exports = {
         'jquery': true,
         'jest/globals': true
     },
-    plugins: ['jest'],
+    plugins: ['jest', 'jsdoc'],
     rules: {
         'import/first': 'off',
         'import/no-extraneous-dependencies': ['error', {
@@ -13,7 +13,9 @@ module.exports = {
         }],
         'arrow-body-style': 'off',
         'class-methods-use-this': 'off',
-        'max-len': [2, 140, 4],
+        'max-len': ['error', {
+            'code': 140
+        }],
         'indent': ['error', 4, {
             'SwitchCase': 1
         }],
@@ -33,6 +35,20 @@ module.exports = {
         'no-multiple-empty-lines': ['error', {
             'max': 1,
             'maxEOF': 1
-        }]
+        }],
+        'jsdoc/check-alignment': 'warn',
+        'jsdoc/check-param-names': 'warn',
+        'jsdoc/check-syntax': 'error',
+        'jsdoc/check-tag-names': 'warn',
+        'jsdoc/check-types': 'error',
+        'jsdoc/implements-on-classes': 'warn',
+        'jsdoc/require-jsdoc': 'warn',
+        'jsdoc/require-param': 'error',
+        'jsdoc/require-param-name': 'error',
+        'jsdoc/require-param-type': 'error',
+        'jsdoc/require-returns': 'error',
+        'jsdoc/require-returns-check': 'error',
+        'jsdoc/require-returns-type': 'error',
+        'jsdoc/valid-types': 'warn',
     }
 };
